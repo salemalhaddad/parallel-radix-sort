@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<style>text { font-family: sans-serif; font-size: 13px; }</style>
+<line x1="120" y1="480" x2="860" y2="480" stroke="black" stroke-width="1.5" />
+<line x1="120" y1="60" x2="120" y2="480" stroke="black" stroke-width="1.5" />
+<line x1="120.0" y1="480" x2="120.0" y2="486" stroke="black" />
+<text x="120.0" y="504" text-anchor="middle">10,000</text>
+<line x1="366.66666666666663" y1="480" x2="366.66666666666663" y2="486" stroke="black" />
+<text x="366.66666666666663" y="504" text-anchor="middle">100,000</text>
+<line x1="613.3333333333333" y1="480" x2="613.3333333333333" y2="486" stroke="black" />
+<text x="613.3333333333333" y="504" text-anchor="middle">1,000,000</text>
+<line x1="860.0" y1="480" x2="860.0" y2="486" stroke="black" />
+<text x="860.0" y="504" text-anchor="middle">10,000,000</text>
+<line x1="114" y1="465.3467772294949" x2="120" y2="465.3467772294949" stroke="black" />
+<text x="110" y="469.3467772294949" text-anchor="end">0.001s</text>
+<line x1="114" y1="392.08066337696937" x2="120" y2="392.08066337696937" stroke="black" />
+<text x="110" y="396.08066337696937" text-anchor="end">0.01s</text>
+<line x1="114" y1="318.8145495244438" x2="120" y2="318.8145495244438" stroke="black" />
+<text x="110" y="322.8145495244438" text-anchor="end">0.1s</text>
+<line x1="114" y1="245.5484356719183" x2="120" y2="245.5484356719183" stroke="black" />
+<text x="110" y="249.5484356719183" text-anchor="end">1s</text>
+<line x1="114" y1="172.2823218193928" x2="120" y2="172.2823218193928" stroke="black" />
+<text x="110" y="176.2823218193928" text-anchor="end">10s</text>
+<line x1="114" y1="99.01620796686723" x2="120" y2="99.01620796686723" stroke="black" />
+<text x="110" y="103.01620796686723" text-anchor="end">100s</text>
+<text x="450.0" y="40" text-anchor="middle" font-size="18">Radix Sort Performance (log-log)</text>
+<text x="490.0" y="540" text-anchor="middle">Input size (n)</text>
+<text x="25" y="270.0" text-anchor="middle" transform="rotate(-90 25 270.0)">Time (seconds, log scale)</text>
+<polyline fill="none" stroke="#d62728" stroke-width="2" points="120.00,244.09 366.67,167.89 613.33,74.65" />
+<circle cx="120.00" cy="244.09" r="4" fill="#d62728" stroke="white" stroke-width="1.5"><title>sequential: n=10,000, t=1.047s</title></circle>
+<circle cx="366.67" cy="167.89" r="4" fill="#d62728" stroke="white" stroke-width="1.5"><title>sequential: n=100,000, t=11.480s</title></circle>
+<circle cx="613.33" cy="74.65" r="4" fill="#d62728" stroke="white" stroke-width="1.5"><title>sequential: n=1,000,000, t=215.044s</title></circle>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2" points="120.00,276.59 366.67,211.27 613.33,115.18" />
+<circle cx="120.00" cy="276.59" r="4" fill="#1f77b4" stroke="white" stroke-width="1.5"><title>multiprocessing: n=10,000, t=0.377s</title></circle>
+<circle cx="366.67" cy="211.27" r="4" fill="#1f77b4" stroke="white" stroke-width="1.5"><title>multiprocessing: n=100,000, t=2.937s</title></circle>
+<circle cx="613.33" cy="115.18" r="4" fill="#1f77b4" stroke="white" stroke-width="1.5"><title>multiprocessing: n=1,000,000, t=60.163s</title></circle>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2" points="120.00,465.35 366.67,421.24 613.33,359.32 860.00,294.76" />
+<circle cx="120.00" cy="465.35" r="4" fill="#2ca02c" stroke="white" stroke-width="1.5"><title>mpi (4 ranks): n=10,000, t=0.001s</title></circle>
+<circle cx="366.67" cy="421.24" r="4" fill="#2ca02c" stroke="white" stroke-width="1.5"><title>mpi (4 ranks): n=100,000, t=0.004s</title></circle>
+<circle cx="613.33" cy="359.32" r="4" fill="#2ca02c" stroke="white" stroke-width="1.5"><title>mpi (4 ranks): n=1,000,000, t=0.028s</title></circle>
+<circle cx="860.00" cy="294.76" r="4" fill="#2ca02c" stroke="white" stroke-width="1.5"><title>mpi (4 ranks): n=10,000,000, t=0.213s</title></circle>
+<rect x="650" y="56" width="180" height="76" fill="#f8f8f8" stroke="#ccc" />
+<line x1="660" y1="70" x2="684" y2="70" stroke="#d62728" stroke-width="3" />
+<circle cx="672" cy="70" r="4" fill="#d62728" stroke="white" stroke-width="1.5" />
+<text x="696" y="75" >sequential</text>
+<line x1="660" y1="92" x2="684" y2="92" stroke="#1f77b4" stroke-width="3" />
+<circle cx="672" cy="92" r="4" fill="#1f77b4" stroke="white" stroke-width="1.5" />
+<text x="696" y="97" >multiprocessing</text>
+<line x1="660" y1="114" x2="684" y2="114" stroke="#2ca02c" stroke-width="3" />
+<circle cx="672" cy="114" r="4" fill="#2ca02c" stroke="white" stroke-width="1.5" />
+<text x="696" y="119" >mpi (4 ranks)</text>
+</svg>
